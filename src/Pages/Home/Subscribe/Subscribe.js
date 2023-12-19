@@ -4,7 +4,7 @@ import midbanner from '../../../img/midbanner.jpg'
 const Subscribe = () => {
     return (
         <div className="hero min-h-screen">
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-opacity-90"></div>
             <div className="hero-content text-center text-white/80">
                 <div className="max-w-md">
                     <div className="divider">
