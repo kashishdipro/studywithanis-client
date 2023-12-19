@@ -4,7 +4,7 @@ import midbanner from '../../../img/midbanner.jpg'
 const Subscribe = () => {
     return (
         <div className="hero min-h-screen">
-            <div className="hero-overlay bg-opacity-90"></div>
+            <div className="hero-overlay bg-gray-300"></div>
             <div className="hero-content text-center text-white/80">
                 <div className="max-w-md">
                     <div className="divider">
@@ -15,11 +15,11 @@ const Subscribe = () => {
                         <img className='h-12' src={midbanner} alt="Mid_Banner" />
                     </div>
                     <div className='flex mx-10 my-10'>
-                        <div className="form-control mr-5">
+                        <div className="form-control mr-5 text-gray-500">
                             <input type="email" placeholder="Your Email" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
-                            <button className="btn bg-white/60 text-white">Login</button>
+                            <button className="btn bg-white/60 text-gray-400">Subscribe</button>
                         </div>
                     </div>
                 </div>
