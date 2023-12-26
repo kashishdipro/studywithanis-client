@@ -3,14 +3,13 @@ import midbanner from '../../../img/midbanner.jpg'
 
 const Subscribe = () => {
     return (
-        <div className="hero min-h-screen">
-            <div className="hero-overlay bg-gray-300"></div>
-            <div className="hero-content text-center text-white/80">
+        <div className="hero">
+            <div className="hero-content text-center h-full w-screen relative bg-black/30">
                 <div className="max-w-md">
                     <div className="divider">
-                        <h3 className="text-2xl font-bold text-yellow-300">Stay Connected</h3>
+                        <h3 className="text-lg md:text-2xl font-bold text-yellow-300">Stay Connected</h3>
                     </div>
-                    <h1 className="text-7xl font-bold my-10 text-white/90">SUBSCRIBE!</h1>
+                    <h1 className="text-5xl md:text-7xl font-bold my-5 text-white/90">SUBSCRIBE!</h1>
                     <div className="divider">
                         <img className='h-12' src={midbanner} alt="Mid_Banner" />
                     </div>
