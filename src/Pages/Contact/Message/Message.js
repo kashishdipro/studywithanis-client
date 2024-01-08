@@ -37,7 +37,7 @@ const Message = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-cyan-100">
+        <div className="hero bg-cyan-100">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
                 <h1 className="text-2xl text-black/70 font-bold">Fell free to share your words with me about my tutorials or myself.</h1>

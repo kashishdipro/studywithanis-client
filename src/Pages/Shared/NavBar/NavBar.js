@@ -1,14 +1,14 @@
 import React from "react";
-import logo from '../../../img/logo.png'
+import logo from '../../../img/logo.png';
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const menuItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/aboutme'>About Me</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
-        
+        <li><Link to='/contact'>Contact</Link></li>    
     </>
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -44,6 +44,9 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">
             {menuItems}
         </ul>
+      </div>
+      <div className="navbar-end">
+        <Link to='/signin' className="btn">Sign In</Link>
       </div>
     </div>
   );
