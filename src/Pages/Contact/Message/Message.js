@@ -1,12 +1,14 @@
-import React from 'react';
-
+import React, {useContext} from 'react';
+// import { AuthContext } from "../../context/AuthProvider/AuthProvider";
 const Message = () => {
+    // const {user} = useContext(AuthContext);
     // Handle Client Message From Input Field
     const handleMessage = event =>{
         event.preventDefault();
         const form = event.target;
         const clientName = form.clientName.value;
         const email = form.email.value;
+        // const email = user?.email || 'unregistered';
         const subject = form.subject.value;
         const phoneNumber = form.phoneNumber.value;
         
