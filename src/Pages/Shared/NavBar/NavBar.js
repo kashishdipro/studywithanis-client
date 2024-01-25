@@ -15,6 +15,13 @@ const NavBar = () => {
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/aboutme'>About Me</Link></li>
         <li><Link to='/contact'>Contact</Link></li>    
+        { user?.uid ?
+          <>
+            <li><Link to='/dashboard'>Dashboard</Link></li>
+          </>
+          :
+          <></>
+        }    
     </>
 
   return (
