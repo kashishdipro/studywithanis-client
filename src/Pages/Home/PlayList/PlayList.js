@@ -1,14 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import midbanner from '../../../img/midbanner.jpg';
 import PlaylistCard from './PlaylistCard';
+import { useQuery } from '@tanstack/react-query';
 
 const PlayList = () => {
-    const [playlist, setPlaylist] = useState([]);
-    useEffect(() =>{
-        fetch('http://localhost:5000/playlist')
-        .then(res => res.json())
-        .then(data => setPlaylist(data))
-    },[])
+    const { data : playlist =[] } = useQuery({
+        queryKey: ['playlist'],
+        queryFn: async() => {
+            const res = await fetch('http://localhost:5000/playlist');
+            const data = await res.json();
+            return data;
+        }
+    }) 
+    // const [playlist, setPlaylist] = useState([]);
+
+    //No need bcoz of using tanstack query
+    // useEffect(() =>{
+    //     fetch('http://localhost:5000/playlist')
+    //     .then(res => res.json())
+    //     .then(data => setPlaylist(data))
+    // },[])
     return (
         <div className="min-h-screen bg-green-300">
             <div className='py-10'>

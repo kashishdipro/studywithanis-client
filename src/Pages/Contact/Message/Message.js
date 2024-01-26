@@ -48,28 +48,28 @@ const Message = () => {
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-cyan-200">
                 <form onSubmit={handleMessage} className="card-body">
                     <div className="form-control">
-                    <label className="label">
-                        <span className="label-text text-black/70">Name</span>
-                    </label>
-                    <input name='clientName' type="name" placeholder="Your name here" className="input input-bordered" required />
+                        <label className="label">
+                            <span className="label-text text-black/70">Name</span>
+                        </label>
+                        <input name='clientName' type="name" placeholder="Your name here" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
-                    <label className="label">
-                        <span className="label-text text-black/70">Email</span>
-                    </label>
-                    <input name='email' type="email" placeholder="email" className="input input-bordered" required />
+                        <label className="label">
+                            <span className="label-text text-black/70">Email</span>
+                        </label>
+                        <input name='email' type="email" placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
-                    <label className="label">
-                        <span className="label-text text-black/70">Subject</span>
-                    </label>
-                    <input name='subject' type="subject" placeholder="Your subject here" className="input input-bordered" required />
+                        <label className="label">
+                            <span className="label-text text-black/70">Subject</span>
+                        </label>
+                        <input name='subject' type="subject" placeholder="Your subject here" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
-                    <label className="label">
-                        <span className="label-text text-black/70">Mobile Number</span>
-                    </label>
-                    <input name='phoneNumber' type="tel" placeholder="Your mobile number" className="input input-bordered" required />
+                        <label className="label">
+                            <span className="label-text text-black/70">Mobile Number</span>
+                        </label>
+                        <input name='phoneNumber' type="tel" placeholder="Your mobile number" className="input input-bordered" required />
                     </div>
                     <div className="form-control mt-6">
                         <input className="btn btn-warning" type='submit' value='Send' input/>
