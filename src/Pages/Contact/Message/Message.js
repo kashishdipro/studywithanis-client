@@ -1,4 +1,5 @@
 import React from 'react';
+import toast from 'react-hot-toast';
 // import { AuthContext } from "../../context/AuthProvider/AuthProvider";
 const Message = () => {
     // const {user} = useContext(AuthContext);
@@ -11,13 +12,15 @@ const Message = () => {
         // const email = user?.email || 'unregistered';
         const subject = form.subject.value;
         const phoneNumber = form.phoneNumber.value;
+        const clientmessage = form.clientmessage.value;
         
         // Message Package
         const message = {
             clientName,
             email,
             subject,
-            phoneNumber
+            phoneNumber,
+            clientmessage
         }
 
         // Post to Message to DB
@@ -31,7 +34,7 @@ const Message = () => {
         .then(res => res.json())
         .then(data => {
             if(data.acknowledged){
-                alert('Message send successfully');
+                toast.success('Message send successfully');
                 form.reset();
             }
         })
@@ -70,6 +73,12 @@ const Message = () => {
                             <span className="label-text text-black/70">Mobile Number</span>
                         </label>
                         <input name='phoneNumber' type="tel" placeholder="Your mobile number" className="input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text text-black/70">Message</span>
+                        </label>
+                        <input name='clientmessage' type="text" placeholder="Your message" className="input input-bordered" required />
                     </div>
                     <div className="form-control mt-6">
                         <input className="btn btn-warning" type='submit' value='Send' input/>

@@ -5,8 +5,9 @@ import Contact from "../../Pages/Contact/Contact/Contact";
 import About from "../../Pages/About Me/About Me/About";
 import SignIn from "../../Pages/SignIn/SignIn";
 import SignUp from "../../Pages/SignUp/SignUp";
-import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
+import DashboardLayout from "../../Layout/DashboardLayout";
+import Messages from "../../Pages/Dashboard/Messages/Messages";
 
 export const router = createBrowserRouter([
     {
@@ -37,6 +38,12 @@ export const router = createBrowserRouter([
     },
     {
         path: '/dashboard',
-        element: <ProtectedRoute><Dashboard/></ProtectedRoute>
+        element: <ProtectedRoute><DashboardLayout/></ProtectedRoute>,
+        children: [
+            {
+                path: '/dashboard/messages',
+                element: <Messages/>
+            }
+        ]
     }
 ])
