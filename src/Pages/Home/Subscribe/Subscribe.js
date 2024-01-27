@@ -25,6 +25,8 @@ const Subscribe = () => {
             if(data.acknowledged){
                 toast.success('Your are added as subscriber successfully');
                 form.reset();
+            }else{
+                toast.error(data.message);
             }
         })
         .catch(err => console.error(err))
