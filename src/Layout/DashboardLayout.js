@@ -17,6 +17,7 @@ const DashboardLayout = () => {
                         {/* Sidebar content here */}
                         <li><Link to='/dashboard/messages'>Messages</Link></li>
                         <li><Link to='/dashboard/subscribers'>Subscribers</Link></li>
+                        <li><Link to='/dashboard/playlist'>Playlist</Link></li>
                         <li><Link to='/dashboard/addplaylist'>Add Playlist</Link></li>
                     </ul>
                 </div>

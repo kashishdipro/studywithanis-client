@@ -10,6 +10,7 @@ import DashboardLayout from "../../Layout/DashboardLayout";
 import Messages from "../../Pages/Dashboard/Messages/Messages";
 import Subscribers from "../../Pages/Dashboard/Subscribers/Subscribers";
 import AddPlaylist from "../../Pages/Dashboard/AddPlaylist/AddPlaylist";
+import Playlist from "../../Pages/Dashboard/Playlist/Playlist";
 
 export const router = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/subscribers',
                 element: <Subscribers/>
+            },
+            {
+                path: '/dashboard/playlist',
+                element: <Playlist/>
             },
             {
                 path: '/dashboard/addplaylist',
