@@ -8,6 +8,8 @@ import SignUp from "../../Pages/SignUp/SignUp";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 import DashboardLayout from "../../Layout/DashboardLayout";
 import Messages from "../../Pages/Dashboard/Messages/Messages";
+import Subscribers from "../../Pages/Dashboard/Subscribers/Subscribers";
+import AddPlaylist from "../../Pages/Dashboard/AddPlaylist/AddPlaylist";
 
 export const router = createBrowserRouter([
     {
@@ -43,6 +45,14 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/messages',
                 element: <Messages/>
+            },
+            {
+                path: '/dashboard/subscribers',
+                element: <Subscribers/>
+            },
+            {
+                path: '/dashboard/addplaylist',
+                element: <AddPlaylist/>
             }
         ]
     }

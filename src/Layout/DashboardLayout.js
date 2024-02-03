@@ -16,6 +16,8 @@ const DashboardLayout = () => {
                     <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                         {/* Sidebar content here */}
                         <li><Link to='/dashboard/messages'>Messages</Link></li>
+                        <li><Link to='/dashboard/subscribers'>Subscribers</Link></li>
+                        <li><Link to='/dashboard/addplaylist'>Add Playlist</Link></li>
                     </ul>
                 </div>
             </div>
